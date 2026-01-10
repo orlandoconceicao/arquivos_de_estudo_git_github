@@ -1,0 +1,4 @@
+Seleciona pasta com: cd .\Nome da pasta\
+Ver informações principaplemte se ta adicionado no GitHub: git status
+Adicionar arquivos. Usar frequentemente: git add "nome do arquivo" ou "pasta\arquivo"
+Adicionar todos arquivos: git add . (sempre verificar com status)
