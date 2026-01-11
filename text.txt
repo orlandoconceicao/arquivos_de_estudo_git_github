@@ -15,6 +15,6 @@ Sequencias fundamentais:
 - salvar mudanças epecíficas       | git commit (arquivo) -m "mensagem"
 - verificar informações            | git status                             |Usar frequentemente para nao perder nada
 - enviar arquivos para o repos     | git push
-- abaixa e mescla e salva o branch | git pull                               |usar frequentemente para ver si nao ha nada novo
+- abaixa e mescla e salva o branch | git pull                               |usar frequentemente para ver si nao ha nada novo  | Pega atualizações tbm
 - clonar repositórios              | git clone (url) .                      |ir no repositório ir em code/copiar url
 - remover arquivo                  | git rm (arquivo)
