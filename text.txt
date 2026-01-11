@@ -19,3 +19,5 @@ Sequencias fundamentais:
 - clonar repositórios              | git clone (url) .                      |ir no repositório ir em code/copiar url
 - remover arquivo                  | git rm (arquivo)
 - puxar histórico de atualizações  | git log                                |mostra quem, data e hora                           
+- mover para outra pasta           | git mv (1arquivo) (pasta/1arquivo)      
+- renomear arquivo                 | git mv (errado) (certo)
