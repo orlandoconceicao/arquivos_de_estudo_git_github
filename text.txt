@@ -18,7 +18,6 @@ Sequencias fundamentais:
 - abaixa e mescla e salva o branch | git pull                               |usar frequentemente para ver si nao ha nada novo  | Pega atualizações tbm
 - clonar repositórios              | git clone (url) .                      |ir no repositório ir em code/copiar url
 - remover arquivo                  | git rm (arquivo)
-<<<<<<< Updated upstream
 - puxar histórico de atualizações  | git log                                |mostra quem, data e hora                           
 =======
 >>>>>>> Stashed changes
