@@ -9,23 +9,76 @@ Sequencias fundamentais:
 Comandos mais usados:
 
 - selecionar pasta                 | cd  .\arquivo\
+
 - limpar terminal                  | clear
+
 - adicionar git no vscode\terminal | git init
+
 - adicionar arquivos específicos   | git add (arquivo) (pasta\arquivo)
+
 - adicionar todos arquivos         | git add .                              |Mesmo dentro de pasta
+
 - salvar todas mudanças            | git commit -a -m "mensagem"
+
 - salvar mudanças epecíficas       | git commit (arquivo) -m "mensagem"
+
 - verificar informações            | git status                             |Usar frequentemente para nao perder nada
+
 - enviar arquivos para o repos     | git push                               
+
 - abaixa e mescla e salva o branch | git pull                               |usar frequentemente para ver si nao ha nada novo  | Pega atualizações tbm
+
 - clonar repositórios              | git clone (url) .                      |ir no repositório ir em code/copiar url
+
 - remover arquivo                  | git rm (arquivo)
+
 - puxar histórico de atualizações  | git log                                |mostra quem, data e hora                           
+
 - mover para outra pasta           | git mv (1arquivo) (pasta/1arquivo)      
+
 - renomear arquivo                 | git mv (errado) (certo)
+
 - retornar ao arquivo original     | git checkout (arquivo)                 |usar com atenção
+
+- mudar de branch                  | git checkout (arquivo)
+
 - ignorar arquivos como APIs       | .gitignore                             |criar arquivo colocar arquivos desnecessarios dentro dele depois criar arquivos desnecessarios, obdecer sequencia. si for colocar pasta coloca /* na frente do nome da pasta
+
 - desfazer todas alterações        | git reset --hard origin/main           |reseta ate o ultimo git push | usar com atenção
+
 - criar ramificação do codigo fonte| git branch (nome)
 
-- branch: ramificações do codigo principal o master/main | so criar branch depois do main/master
+- deletar um branch                | git branch -d ou --delete (nome)       |pouco usado
+
+
+- mudar e criar branch             | git checkout -b (arquivo)              |usado para dispensar mudanças de um arquivo
+
+- git checkout master/main       =>| git pull Depois criar outro branch     |sempre commitar para nao trazer erros 
+
+- unir branches na master/main     | git merge (arquivo)                    |dar check na master => dar merge na pasta => e check em outra
+
+- ir para a atualização da master  | git merge master                       |normaçmente alguem coloca o branch na master
+
+- salvar modificações atuais       | git stash
+
+- verificcar stash criadas         | git stash list
+
+- recuperar stash no branch        | git stash apply (numero stash)
+
+- ver tudo de qualquer stash atuliz| git stash show -p (numero stash)
+
+- remover todas stach do bran atual| git stash clear
+
+- remover stash epecifica          | git stash drop (numero da stash)
+
+- marcar stash dar nome e mensagem | git tag -a (marcador-nome) -m "mensagem"
+
+- ver tags criadas                 | git tag                                | colocar tag depois de commitar
+
+- verificar tags                   | git show (nome dado na tag -a)
+
+- trocar de tag                    | git checkout (nome da tag -a)
+
+- enviar a tag ao repositório      | git push origin (nome da tag)
+
+- enviar toas tags ao repositório  | git push origin --tags
