@@ -6,6 +6,15 @@ Sequencias fundamentais:
 - colocar nome e observação 
 - fazer oque o github manda
 
+------------------------------------------------------------------
+letras e seus comandos
+- -a => todos
+- -m => mensagem
+- -d => delete
+- -b => criar 
+- -f => forçar
+--------------------------------------------------------------------------
+
 Comandos diferentes:
 
 - selecionar pasta                 | cd  .\arquivo\
@@ -22,6 +31,7 @@ Comandos diferentes:
                 | depois que termian a tarefa da um commit depois pull
                     | depois copia o comando que elo da para ficar no remoto/github
 ---------------------------------------------------------------------------------------
+
 - enviar alterações
     | git status para ver
         |git add . adicionar tudo
@@ -29,6 +39,7 @@ Comandos diferentes:
                 |git commit -a -m
                     |git push
 -------------------------------------------------------------------------------------------
+
 - trabalhar remotamente com outro dev => falar que o outro dev ja pode baixar a master
     |git fetch -a puxar arquivos do repo
         |git checkout em nova_tarefa
@@ -36,11 +47,25 @@ Comandos diferentes:
                 |git commit -a -m salvar 
                     |git push
 -------------------------------------------------------------------------------------------
+
 - atualizar submodulo 
     |git add . adicionar tudo 
         |git commit -a -m salvar no repositorio 
             |  git push --recurse-submodule=on-demand push diferente para o submodule
 ------------------------------------------------------------------------------------------
+
+comandos da area administrativa:
+
+- limpar arquivos untraked         | git clean -f(-f força apagar)          | dar git add (nome) e commit em arquivos importantes antes de dar clean                                                    untraked => arquivos que nao foi usadados git add .
+
+- limpar arquivos desnecessarios   | git gc
+
+- verificar corrupções em arquivos | git fsck
+
+- mapear todos passos d repositorio| git reflog                             | fica salvo em ate 30 dias
+
+- passar repositorio via arquivo   | git archive --format zip -output (nome, pasta a gerar) master
+---------------------------------------------------------------------------------------------------
 
 Comandos em geral:
 
@@ -77,6 +102,8 @@ Comandos em geral:
 - ignorar arquivos como APIs       | .gitignore                             |criar arquivo colocar arquivos desnecessarios dentro dele depois criar arquivos desnecessarios, obdecer sequencia. si for colocar pasta coloca /* na frente do nome da pasta
 
 - desfazer todas alterações        | git reset --hard origin/main           |reseta ate o ultimo git push | usar com atenção
+
+- ir e voltar com reflog           | git reset --hard b7724cb  
 
 - criar ramificação do codigo fonte| git branch (nome)
 
