@@ -67,6 +67,17 @@ comandos da area administrativa:
 - passar repositorio via arquivo   | git archive --format zip -output (nome, pasta a gerar) master
 ---------------------------------------------------------------------------------------------------
 
+- mudar/criar de branchs dentro da master para depois mandar para master
+    - git checkout -b "nome branch" mudar e criar branch
+        - git branch para verificar em que branch esta
+            - git status para ver detalhes se ta salva e etc.
+                - git add . para adicionar tudo tudo
+                    - git commit -a -m "para salvar tudo"
+                        - git push para enviar ao repositório
+                            - copiar codigo que aparecer e colar no comando/
+
+------------------------------------------------------------------------------------------------------
+
 Comandos em geral:
 
 - adicionar git no vscode\terminal | git init
@@ -85,7 +96,7 @@ Comandos em geral:
 
 - abaixa e mescla e salva o branch | git pull                               |usar frequentemente para ver si nao ha nada novo  | Pega atualizações tbm
 
-- clonar repositórios              | git clone (url) .                      |ir no repositório ir em code/copiar url
+- clonar repositórios              | git clone (url) . (ou nome da pasta)   |ir no repositório ir em code/copiar url
 
 - remover arquivo                  | git rm (arquivo)
 
