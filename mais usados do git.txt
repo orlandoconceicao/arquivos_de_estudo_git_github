@@ -96,7 +96,7 @@ Comandos em geral:
 
 - abaixa e mescla e salva o branch | git pull                               |usar frequentemente para ver si nao ha nada novo  | Pega atualizações tbm
 
-- clonar repositórios              | git clone (url) . (ou nome da pasta)   |ir no repositório ir em code/copiar url
+- clonar repositórios              | git clone (url) ./nome da pasta        |ir no repositório ir em code/copiar url
 
 - remover arquivo                  | git rm (arquivo)
 
