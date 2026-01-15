@@ -1,0 +1,12 @@
+- Aba code {
+        ver aquivos da master (ver tags, branchs arquivos)
+    }
+
+- aba issues {
+        mandar mensagaem para comunicar erros e afins (criar labels, marcar quem vai resolver)
+}
+
+- aba pull request {
+        mandar codigo para analise (analisar codigos para nao ir bagunçado na master)
+}
+
