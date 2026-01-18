@@ -5,15 +5,25 @@
 - new em verde 
 - colocar nome e observação 
 - fazer oque o github manda
+-------------------------------------------------------------------------------------------------
 
-------------------------------------------------------------------
+- comando que o git manda fazer para criar repósitorio + conectar com github. coloca um de cada vez
+    - git init
+    - git status
+    - git add .
+    - git commit -m "primeiro commit"
+    - git branch -M main
+    - git remote add origin https://github.com/SEU_USUARIO/NOME_DO_REPO.git
+    - git push -u origin main
+-------------------------------------------------------------------------------------------------
+
                                 letras e seus comandos
 - -a => todos
 - -m => mensagem
 - -d => delete
 - -b => criar 
 - -f => forçar
---------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
 
                                 Comandos diferentes:
 
@@ -23,14 +33,15 @@
 
 - atualizar master => git branch => git pull => git merge origin/nome do branch => git push
 
--------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+
 - pegar ultima atualização da main 
     | git checkout master => git pull        
         | fazer sempre que for começar a trabalhar  
             | depois dar checkout -b "mensagem" para mudar e criar um branch
                 | depois que termian a tarefa da um commit depois pull
                     | depois copia o comando que elo da para ficar no remoto/github
----------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
 
 - enviar alterações
     | git status para ver
@@ -38,7 +49,7 @@
             |git status
                 |git commit -a -m
                     |git push
--------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
 
 - trabalhar remotamente com outro dev => falar que o outro dev ja pode baixar a master
     |git fetch -a puxar arquivos do repo
@@ -46,13 +57,13 @@
             |git branch ver branchs
                 |git commit -a -m salvar 
                     |git push
--------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
 
 - atualizar submodulo 
     |git add . adicionar tudo 
         |git commit -a -m salvar no repositorio 
             |  git push --recurse-submodule=on-demand push diferente para o submodule
-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
 
 comandos da area administrativa:
 
@@ -65,7 +76,7 @@ comandos da area administrativa:
 - mapear todos passos d repositorio| git reflog                             | fica salvo em ate 30 dias
 
 - passar repositorio via arquivo   | git archive --format zip -output (nome, pasta a gerar) master
----------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
 
 - mudar/criar de branchs dentro da master para depois mandar para master
     - git checkout -b "nome branch" mudar e criar branch
@@ -76,7 +87,7 @@ comandos da area administrativa:
                         - git push para enviar ao repositório
                             - copiar codigo que aparecer e colar no comando/
 
-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
 
 Comandos em geral:
 
