@@ -183,3 +183,48 @@ Comandos em geral:
 
 - excluir commit aula 71 minuti 8  | git 
 
+-------------------------------------------------------------------------------------------------
+
+                    CORRIGINDO ALGUNS ERROS / PASTA FICA RISCADA
+
+git pull origin main --rebase => usa esse se dar push e resolver ja esta otimo depois da add.
+
+- Verificar status e ver a pasta riscada (não rastreada)
+    git status
+
+- Adicionar a pasta riscada (ou todos os arquivos novos)
+    git add .
+
+- Fazer commit das alterações
+    git commit -m "Adiciona pasta com código e organiza arquivos"
+
+- Puxar as alterações do GitHub antes de enviar (evita rejeição)
+    git pull origin main --rebase
+
+-Resolver conflitos se aparecerem (abrir os arquivos conflitantes, salvar)
+-Depois de resolver conflitos, continuar o rebase:
+    git add .
+    git rebase --continue
+
+- Enviar tudo para o GitHub
+    git push origin main
+
+
+                PASSOS PARA VOLTAR A SUBIR TUDO AO GITHUB
+
+- De git init para começar se ainda não deu
+
+- Verificar status do repositório
+    git status
+
+- Adicionar todos os arquivos novos/modificados
+    git add .
+
+- Fazer commit
+    git commit -a -m ""
+
+- Puxar alterações do GitHub (evita rejeição)
+    git pull origin main --rebase
+
+- Enviar para o GitHub
+    git push origin main
