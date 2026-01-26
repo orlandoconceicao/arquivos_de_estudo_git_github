@@ -209,22 +209,23 @@ git pull origin main --rebase => usa esse se dar push e resolver ja esta otimo d
 - Enviar tudo para o GitHub
     git push origin main
 
+                SEMPRE ABRE O TERMINAL NA PASTA E NAO NO VS CODE
+git pull origin main --rebase
+git add .
+git commit -m "Mensagem do commit"
+git push origin main
 
                 PASSOS PARA VOLTAR A SUBIR TUDO AO GITHUB
 
-- De git init para começar se ainda não deu
+cd caminho/para/seu/projeto
+git init
+git remote add origin URL_DO_REPOSITORIO
+git remote set-url origin URL_DO_REPOSITORIO
+git status
+git add .
+git commit -m "Mensagem do commit"
+git push origin main
+git push origin master
+git pull origin main
+git pull origin master
 
-- Verificar status do repositório
-    git status
-
-- Adicionar todos os arquivos novos/modificados
-    git add .
-
-- Fazer commit
-    git commit -a -m ""
-
-- Puxar alterações do GitHub (evita rejeição)
-    git pull origin main --rebase
-
-- Enviar para o GitHub
-    git push origin main
